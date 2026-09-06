@@ -57,6 +57,7 @@ cover/
 *.pot
 
 # Django stuff:
+logs/
 *.log
 local_settings.py
 db.sqlite3
@@ -165,3 +166,16 @@ cython_debug/
 # MLflow
 mlflow.db
 mlruns/
+mlartifacts/
+
+# Models
+models/*.joblib
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Temporary
+*.tmp
+*.pkl
+.sfdx/
+*.cls
