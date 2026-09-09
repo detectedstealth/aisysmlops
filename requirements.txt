@@ -41,3 +41,7 @@ python-dotenv
 
 # MLFlow
 mlflow
+
+# UI
+gradio
+requests
