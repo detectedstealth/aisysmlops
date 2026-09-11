@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-from api.routers import risk, claim
+from api.routers import risk, claim, monitoring
 
 app = FastAPI(title="Healthcare ML API", version="1.0.0")
 
@@ -15,6 +15,7 @@ def health():
 # Registering Routes
 app.include_router(risk.router, prefix="/predict", tags=["Risk Score Prediction"])
 app.include_router(claim.router, prefix="/predict", tags=["Claim Status Prediction"])
+app.include_router(monitoring.router, prefix="/monitor", tags=["Monitoring"])
 
 if __name__ == "__main__":
     import uvicorn
