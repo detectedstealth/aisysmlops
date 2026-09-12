@@ -34,7 +34,7 @@ seaborn
 
 # Testing
 pytest
-httpx
+httpx2
 
 # Utilities
 python-dotenv
